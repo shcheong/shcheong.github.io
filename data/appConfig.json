@@ -1,0 +1,101 @@
+{
+    "networks": [
+        {
+            "name": "Bitcoin",
+            "symbol": "BTC",
+            "shortcut": "btc",
+            "bip44": "m/44'/0'/0'",
+            "chainId": 1,
+            "defaultGasPrice": 64,
+            "defaultGasLimit": 21000,
+            "defaultGasLimitTokens": 200000,
+            "tokens": "./data/ethereumTokens.json",
+            "web3": [
+                "wss://eth2.trezor.io/geth"
+            ],
+            "explorer": {
+                "tx": "https://www.blockchain.com/btc/tx/",
+                "address": "https://www.blockchain.com/btc/address/"
+            }
+        },
+        {
+            "name": "Ethereum",
+            "symbol": "ETH",
+            "shortcut": "eth",
+            "bip44": "m/44'/60'/0'/0",
+            "chainId": 1,
+            "defaultGasPrice": 64,
+            "defaultGasLimit": 21000,
+            "defaultGasLimitTokens": 200000,
+            "tokens": "./data/ethereumTokens.json",
+            "web3": [
+                "wss://eth2.trezor.io/geth"
+            ],
+            "explorer": {
+                "tx": "https://etherscan.io/tx/",
+                "address": "https://etherscan.io/address/"
+            }
+        },
+        {
+            "name": "Ethereum Classic",
+            "symbol": "ETC",
+            "shortcut": "etc",
+            "chainId": 61,
+            "bip44": "m/44'/61'/0'/0",
+            "defaultGasPrice": 64,
+            "defaultGasLimit": 21000,
+            "defaultGasLimitTokens": 200000,
+            "tokens": "./data/ethereumClassicTokens.json",
+            "web3": [
+                "wss://etc2.trezor.io/geth"
+            ],
+            "explorer": {
+                "tx": "https://gastracker.io/tx/",
+                "address": "https://gastracker.io/addr/"
+            }
+        },
+        { 
+            "name": "Ethereum Ropsten",
+            "symbol": "tROP",
+            "shortcut": "trop",
+            "chainId": 3,
+            "bip44": "m/44'/60'/0'/0",
+            "defaultGasPrice": 64,
+            "defaultGasLimit": 21000,
+            "defaultGasLimitTokens": 200000,
+            "tokens": "./data/ropstenTokens.json",
+            "web3": [
+                "wss://ropsten1.trezor.io/geth"
+            ],
+            "explorer": {
+                "tx": "https://ropsten.etherscan.io/tx/",
+                "address": "https://ropsten.etherscan.io/address/"
+            }
+        }
+    ],
+
+    "fiatValueTickers": [
+        { 
+            "network": "eth",
+            "url": "https://api.coinmarketcap.com/v1/ticker/ethereum/"
+        },
+        { 
+            "network": "etc",
+            "url": "https://api.coinmarketcap.com/v1/ticker/ethereum-classic/"
+        }
+    ],
+
+    "supportedBrowsers": {
+        "chrome": {
+            "version": 59,
+            "download": "https://www.google.com/chrome/",
+            "update": "https://support.google.com/chrome/answer/95414"
+        },
+        "firefox": {
+            "version": 54,
+            "download": "https://www.mozilla.org/en-US/firefox/new/",
+            "update": "https://support.mozilla.org/en-US/kb/update-firefox-latest-version"
+        }
+    }
+
+}
